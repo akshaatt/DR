@@ -5,13 +5,15 @@
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
     line-height: 06px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 #a1{
+    /* margin-top: -5px; */
     text-transform: uppercase;
     padding-left: 20px;
 }
 #a2{
+    /* margin-top: -5px; */
     font-size: 3.5rem;
     padding-left: 20px;
 }
@@ -23,12 +25,12 @@
     
 }
 .img img{
-height: 500px;
-width: 500px;
+height: 700px;
+width: 700px;
 }
 #i1{
 color: darkgreen;
-font-size: 3.5rem;
+font-size: 4.5rem;
 font-family: 'Montserrat', sans-serif;
 }
 #i2{
@@ -168,4 +170,18 @@ hr{
 .f-text p{
     font-size: 2rem;
     width: 700px;
+}
+#preview1111{
+    max-width: 250px;
+    max-height: 250px;
+    /* min-height: 250px;
+    min-width: 250px; */
+}
+#i6{
+    color: darkgreen;
+font-size: 1rem;
+font-family: 'Montserrat', sans-serif;
+}
+#image1111{
+    width: 200px;
 }

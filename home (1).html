@@ -14,7 +14,19 @@
     
     <title>Diabetes Diagnosis Through Retinopathy</title>
 </head>
+<!-- <script src="script.js"></script> -->
 <body>
+    <!-- <script>
+            var image = document.getElementById("image1111");
+        var preview = document.getElementById("preview1111");
+        image.addEventListener("change",function(event){
+            if(event.target.files.length == 0){
+                return;
+            }
+            var tempUrl = URL.createObjectURL(event.target.files[0]);
+            preview.setAttribute("src",tempUrl);
+        });
+    </script> -->
     <div class="heaad">
     <div class="head">
         <p id="a1">Diabetes Diagnosis</p>
@@ -26,13 +38,16 @@
 </div>
     <div class="main">
         <div class="t1">
-            <p id="i1">One Step +</p><p id="i2">Solution to your health problems</p>
+            <p id="i1">Diabetes Mellitus +</p><p id="i2">Solution to your health problems</p>
             <div>
                 <form>
                 <input type="text" placeholder="Name" required><br><br>
                 <input type="number" placeholder="Age" required><br><br>
-                <input class="fileupload" type="file" onchange="readURL(this)" accept="Image/*" required>
-                <p class="plz">Please Upload Your Retina Photos</p>
+                
+                <!-- <p id="i6">Uploaded File :<br></p> -->
+                            <img id="preview1111"><br>
+                            <input class="fileupload" type="file" accept="image/*" id="image1111" required><br><br>
+                <!-- <p class="plz">Please Upload Your Retina Photos</p> -->
                 <a href="loading.html"><input type="submit" class="sub"></a>
             </form>
                 <div class="rem">
@@ -45,6 +60,7 @@
         </div>
         <div class="img">
             <img src="home.jpg">
+            <!-- <img id="preview1111"> -->
         </div>
     </div>
     <br>
@@ -113,7 +129,7 @@ retinopathy by:<br><br>
                 </div>
                 <div class="students">
                     <div class="akshat">Faculty Incharge</div>
-                    <div class="zx"> Dr. Indrajeet Kaur</div><br>
+                    <div class="zx"> Dr. Inderjeet Kaur</div><br>
                     <div class="akshat">Head Of Department</div>
                     <div class="zx"> Dr. Sunita Yadav</div>
                 </div>
@@ -124,5 +140,16 @@ retinopathy by:<br><br>
             <img src="footer.png">
         </div>
     </div>
+    <script>
+        var image = document.getElementById("image1111");
+    var preview = document.getElementById("preview1111");
+    image.addEventListener("change",function(event){
+        if(event.target.files.length == 0){
+            return;
+        }
+        var tempUrl = URL.createObjectURL(event.target.files[0]);
+        preview.setAttribute("src",tempUrl);
+    });
+</script>
 </body>
 </html>
